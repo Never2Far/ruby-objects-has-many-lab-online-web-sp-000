@@ -20,7 +20,7 @@ def self.all
 end
 
 def artist_name
-  return self.artist.name
+  @artist == nil ? nil : self.artist.name
 end
 
 
