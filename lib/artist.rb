@@ -17,9 +17,12 @@ def add_song_by_name(name)
   add_song(song)
 end
 
-
 def songs
  Song.all.select {|song| song.artist == self}
+end
+
+def self.song_count
+  return Song.all.size
 end
 
 end
