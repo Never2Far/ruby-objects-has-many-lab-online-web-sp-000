@@ -11,16 +11,16 @@ def add_post(post)
 end
 
 def add_post_by_name(name)
-  post = Song.new(name)
+  post = Post.new(name)
   add_post(post)
 end
 
 def posts
- Song.all.select {|post| post.artist == self}
+ Post.all.select {|post| post.artist == self}
 end
 
 def self.post_count
-  return Song.all.size
+  return Post.all.size
 end
 
 end
