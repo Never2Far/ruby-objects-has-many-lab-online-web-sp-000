@@ -7,7 +7,7 @@ def initialize(name)
 end
 
 def add_post(post)
-  post.artist = self
+  post.author = self
 end
 
 def add_post_by_name(name)
@@ -16,7 +16,7 @@ def add_post_by_name(name)
 end
 
 def posts
- Post.all.select {|post| post.artist == self}
+ Post.all.select {|post| post.author == self}
 end
 
 def self.post_count
