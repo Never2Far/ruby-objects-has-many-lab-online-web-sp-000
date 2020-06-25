@@ -20,7 +20,7 @@ def self.all
 end
 
 def author_name
-  return self.author.name
+  @author == nil ? nil : self.author.name
 end
 
 
